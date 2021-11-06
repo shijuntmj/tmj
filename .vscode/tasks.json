@@ -1,0 +1,76 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "g++.exe build active file",
+      "command": "D:\\mingw64\\bin\\g++.exe",
+      "args": [
+        "-g",
+        //"${fileDirname}\\myInt.cpp",//头文件实现的对应cpp文件
+        "-std=c++17",
+        "\"${file}\"",
+        "-o",
+        "\"${fileDirname}\\out\\${fileBasenameNoExtension}.exe\"",
+        "-lgraphics64",
+        "-lgdiplus",
+        "-luuid",
+        "-lmsimg32",
+        "-lgdi32",
+        "-limm32",
+        "-lole32",
+        "-loleaut32",
+        "-lwinmm"
+      ],
+      "options": {
+        "cwd": "D:\\mingw64\\bin"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "run_pause",
+      "type": "shell",
+      "command": "cmd",
+      "dependsOn": "g++.exe build active file",
+      "args": [
+        "/C",
+        "START",
+        "D:\\mingw64\\bin\\ConsolePauser.exe",
+        "\"${fileDirname}\\${fileBasenameNoExtension}.exe\""
+      ],
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ],
+  "options": {
+    "shell": {
+      "executable": "${env:SystemRoot}\\System32\\cmd.exe",
+      "args": [
+        "/c"
+      ]
+    },
+    "env": {
+      "Path": "D:\\mingw64\\bin:${env:Path}"
+    }
+  }
+}
