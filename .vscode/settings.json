@@ -48,7 +48,9 @@
     "any": "cpp",
     "functional": "cpp",
     "numeric": "cpp",
-    "list": "cpp"
+    "list": "cpp",
+    "chrono": "cpp",
+    "thread": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "D:\\mingw64\\bin\\gcc.exe",
   "C_Cpp_Runner.cppCompilerPath": "D:\\mingw64\\bin\\g++.exe",

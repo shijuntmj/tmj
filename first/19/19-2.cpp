@@ -35,7 +35,30 @@ void str_search()
         cout << "ºó×º" << result.prefix() << endl;
         cout << "ºó×º" << result.suffix() << endl;
     }
+    //Êı×Öµü´úcout
+    regex rule("\\d+");
+    sregex_iterator pos(a.begin(), a.end(), rule);
+    sregex_iterator end;
+    while (pos!=end)
+    {
+        cout << pos->str() << "\t";
+        pos++;
+    }
+    cout << endl;
+    //sregex_token_iterator(begin,end,regex,int)
+    //0£º²»Æ¥Åä     -1:Æ¥Åä
+    string str = "rtyui178uqihd";
+    regex rule1("\\d+");
+    sregex_token_iterator pos1(str.begin(), str.end(), rule1, -1);
+    sregex_token_iterator qend;
+    while (pos1!=qend)
+    {
+        cout << pos1->str() << "\t";
+        pos1++;
+    }
+    cout << endl;
 }
+
 int main()
 {
     // email_match();
