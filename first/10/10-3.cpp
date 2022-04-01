@@ -1,9 +1,9 @@
-// 模板中带有变量
+// ????д??б???
 #include<iostream>
 #include<string>
 #include<cstring>
 using namespace std;
-template <class _ty1,size_t size>//size只能是常量，不能是变量
+template <class _ty1,size_t size>//size???????????????????
 class MM
 {
     _ty1 *parray;
@@ -41,7 +41,7 @@ int main()
     for (int i = 0; i < 3; i++)
     {
         mm1[i] = ("this is"+i);
-        cout << mm1[i] << "\t";//报错
+        cout << mm1[i] << "\t";//????
     }
     cout << endl;
     getchar();

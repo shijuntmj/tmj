@@ -7,13 +7,9 @@
       "command": "D:\\mingw64\\bin\\g++.exe",
       "args": [
         "-g",
-
-
-        "${fileDirname}\\myInt.cpp",
-        // "${fileDirname}\\tcpsocket.h",
-        // "D:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include",
-
-
+        //"${fileDirname}\\myInt.cpp",//头文件实现的对应cpp文件
+        // "${fileDirname}\\mySpace.cpp",
+        
         "-std=c++17",
         "\"${file}\"",
         "-o",

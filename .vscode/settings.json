@@ -48,9 +48,7 @@
     "any": "cpp",
     "functional": "cpp",
     "numeric": "cpp",
-    "list": "cpp",
-    "chrono": "cpp",
-    "thread": "cpp"
+    "list": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "D:\\mingw64\\bin\\gcc.exe",
   "C_Cpp_Runner.cppCompilerPath": "D:\\mingw64\\bin\\g++.exe",
@@ -62,7 +60,9 @@
     "-Wpedantic"
   ],
   "C_Cpp_Runner.compilerArgs": [],
-  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.includePaths": [
+    "D:/code/*"
+  ],
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.cStandard": "",
   "C_Cpp_Runner.cppStandard": "",

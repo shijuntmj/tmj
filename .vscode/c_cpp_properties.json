@@ -3,9 +3,8 @@
     {
       "name": "windows-gcc-x64",
       "includePath": [
-        "D:/code/*",
-        //"D:/code/*",//头文件目录
-        "${workspaceFolder}/**"
+        "${workspaceFolder}/**",
+        "D:/code/*"
       ],
       "defines": [
         "_DEBUG",
